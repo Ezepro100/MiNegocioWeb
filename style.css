@@ -65,9 +65,7 @@ section {
 }
 
 .productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .producto {
@@ -230,4 +228,12 @@ footer {
 
 .boton-producto:hover {
     background-color: #c94f03;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
 }

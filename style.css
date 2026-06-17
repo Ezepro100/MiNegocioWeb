@@ -237,3 +237,22 @@ footer {
     gap: 25px;
     margin-top: 30px;
 }
+
+.etiqueta {
+    display: inline-block;
+    background-color: #e85d04;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.etiqueta.nuevo {
+    background-color: #25d366;
+}
+
+.etiqueta.clasico {
+    background-color: #333;
+}

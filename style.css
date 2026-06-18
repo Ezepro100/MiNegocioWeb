@@ -256,3 +256,43 @@ footer {
 .etiqueta.clasico {
     background-color: #333;
 }
+
+.nosotros {
+    background-color: #fff;
+    padding: 70px 20px;
+}
+
+.contenido-nosotros {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto-nosotros {
+    max-width: 500px;
+    text-align: left;
+}
+
+.texto-nosotros h2 {
+    font-size: 36px;
+    color: #e85d04;
+    margin-bottom: 20px;
+}
+
+.texto-nosotros p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.imagen-nosotros img {
+    width: 380px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}

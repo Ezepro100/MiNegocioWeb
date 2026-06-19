@@ -457,3 +457,74 @@ footer {
     border-top: 1px solid #444;
     font-size: 14px;
 }
+
+.hero {
+    min-height: 80vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("imagenes/tequenos.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-contenido {
+    max-width: 800px;
+    color: white;
+}
+
+.hero-contenido h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.hero-contenido p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.boton-principal,
+.boton-secundario {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.boton-principal {
+    background-color: #e85d04;
+    color: white;
+}
+
+.boton-secundario {
+    background-color: white;
+    color: #e85d04;
+}
+
+.boton-principal:hover,
+.boton-secundario:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+    .hero-contenido h1 {
+        font-size: 38px;
+    }
+
+    .hero-contenido p {
+        font-size: 18px;
+    }
+}

@@ -528,3 +528,49 @@ footer {
         font-size: 18px;
     }
 }
+
+.opiniones {
+    background-color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.opiniones h2 {
+    font-size: 36px;
+    color: #e85d04;
+    margin-bottom: 10px;
+}
+
+.subtitulo-opiniones {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.contenedor-opiniones {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.opinion {
+    background-color: #fff7ed;
+    width: 300px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.opinion p {
+    font-style: italic;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.opinion h4 {
+    color: #e85d04;
+}

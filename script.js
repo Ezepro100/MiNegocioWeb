@@ -24,3 +24,11 @@ if (botonMenu && menu) {
         menu.classList.toggle("activo");
     });
 }
+
+const enlacesMenu = document.querySelectorAll("#menu a");
+
+enlacesMenu.forEach(function(enlace) {
+    enlace.addEventListener("click", function() {
+        menu.classList.remove("activo");
+    });
+});

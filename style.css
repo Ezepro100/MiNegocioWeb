@@ -610,3 +610,29 @@ footer {
         text-align: center;
     }
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9000;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+nav a {
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffb703;
+    transform: translateY(-2px);
+}

@@ -15,3 +15,12 @@ if (formulario) {
         formulario.reset();
     });
 }
+
+const botonMenu = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+if (botonMenu && menu) {
+    botonMenu.addEventListener("click", function() {
+        menu.classList.toggle("activo");
+    });
+}

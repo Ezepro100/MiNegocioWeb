@@ -574,3 +574,39 @@ footer {
 .opinion h4 {
     color: #e85d04;
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #e85d04;
+        padding: 20px 0;
+        margin-top: 15px;
+    }
+
+    nav ul.activo {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}

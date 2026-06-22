@@ -662,3 +662,28 @@ nav a:hover {
 .pedido-rapido .boton-principal:hover {
     background-color: #fff7ed;
 }
+
+.filtros-productos {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.filtro {
+    background-color: white;
+    color: #e85d04;
+    border: 2px solid #e85d04;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtro:hover,
+.filtro.activo {
+    background-color: #e85d04;
+    color: white;
+}

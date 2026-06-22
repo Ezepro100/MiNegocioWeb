@@ -43,3 +43,28 @@ enlacesMenu.forEach(function(enlace) {
         menu.classList.remove("activo");
     });
 });
+
+const botonesFiltro = document.querySelectorAll(".filtro");
+const productos = document.querySelectorAll(".producto");
+
+botonesFiltro.forEach(function(boton) {
+    boton.addEventListener("click", function() {
+        const categoria = boton.getAttribute("data-categoria");
+
+        botonesFiltro.forEach(function(btn) {
+            btn.classList.remove("activo");
+        });
+
+        boton.classList.add("activo");
+
+        productos.forEach(function(producto) {
+            const categoriaProducto = producto.getAttribute("data-categoria");
+
+            if (categoria === "todos" || categoria === categoriaProducto) {
+                producto.style.display = "block";
+            } else {
+                producto.style.display = "none";
+            }
+        });
+    });
+});

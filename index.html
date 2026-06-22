@@ -44,14 +44,20 @@
         </div>
     </div>
 </header>
-
+<div> 
     <section class="productos" id="productos">
     <h2>Nuestro Menú</h2>
     <p class="subtitulo-productos">Elige tu favorito y haz tu pedido por WhatsApp</p>
 
+    <div class="filtros-productos">
+    <button class="filtro activo" data-categoria="todos">Todos</button>
+    <button class="filtro" data-categoria="tequeños">Tequeños</button>
+    <button class="filtro" data-categoria="empanadas">Empanadas</button>
+</div>
+
     <div class="contenedor-productos">
 
-        <div class="producto">
+        <div class="producto" data-categoria="tequeños">
             <img src="imagenes/tequeños.png" alt="Tequeños tradicionales">
 
             <span class="etiqueta">Más vendido</span>
@@ -66,7 +72,7 @@
                Pedir tequeños
             </a>
         </div>
-        <div class="producto">
+        <div class="producto" data-categoria="empanadas">
             <img src="imagenes/empanadas.png" alt="Empanadas de carne">
 
             <span class="etiqueta">Más pedido</span>
@@ -82,7 +88,7 @@
             </a>
         </div>
 
-        <div class="producto">
+        <div class="producto" data-categoria="empanadas">
             <img src="imagenes/empanadas.png" alt="Empanadas de pollo">
 
             <span class="etiqueta clasico">Clásico</span>

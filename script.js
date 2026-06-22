@@ -10,7 +10,18 @@ if (formulario) {
     formulario.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        alert("¡Gracias por contactarnos! Te responderemos pronto.");
+        const nombre = document.getElementById("nombre").value;
+        const correo = document.getElementById("correo").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        const textoWhatsApp = 
+            `Hola, soy ${nombre}.%0A` +
+            `Mi correo es: ${correo}.%0A` +
+            `Mensaje: ${mensaje}`;
+
+        const url = `https://api.whatsapp.com/send?phone=5491122581002&text=${textoWhatsApp}`;
+
+        window.open(url, "_blank");
 
         formulario.reset();
     });
